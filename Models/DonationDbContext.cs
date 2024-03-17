@@ -1,0 +1,17 @@
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace WebApITutorial.Model
+{
+    public class DonationDbContext : DbContext
+    {
+        public DonationDbContext(DbContextOptions<DonationDbContext> options): base(options)
+        {
+
+        }
+
+        public DbSet<DCandidate> DCandidates { get; set; }
+
+
+    }
+
+}
